@@ -1,0 +1,23 @@
+## How to run the application:
+
+```
+./mvnw spring-boot:run
+```
+
+### Curl examples
+
+Creating a new Rover
+```
+curl localhost:8080/createRover -d 'coordinates=1,2,N'
+```
+
+Getting current position
+```
+curl localhost:8080/currentPosition -d 'roverName=R1'
+```
+
+Move the rover
+```
+curl localhost:8080/moveRover -d 'roverName=R1&command=f,f,f,b,f'
+```
+
